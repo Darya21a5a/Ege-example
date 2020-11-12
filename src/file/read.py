@@ -4,15 +4,18 @@
 
 list1 = open("27-A_demo.txt", "r").read().split(" ")
 
+print(list1)
 for i in list1:
     if len(i) == 0:
         list1.remove(i)
+
 
 list2 = []
 for i in list1:
     if i.__contains__("\n"):
         list2.append(i.replace("\n", " ").split(" "))
 
+print(list2)
 list3 = []
 for i in list2:
     if len(i) > 1:
